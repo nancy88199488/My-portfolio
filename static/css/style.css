@@ -1,0 +1,13 @@
+body {
+font-family: 'Viaoda Libre', cursive;
+}
+a {
+    color: #1e1e1e;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  a:hover {
+    color: #8400ff;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+  }

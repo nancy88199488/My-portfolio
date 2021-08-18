@@ -1,11 +1,17 @@
+{% load bootstrap4 %}
 {% load static %}
+{% load cloudinary %}
 <!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Nancy Portfolio</title>
   {% block styles %}
   
-  <link rel="stylesheet" href="{% static 'css/style.css'%}" type="text/css">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
+  <link rel="icon" type="image/png" href="/static/images/icon.jpeg">
   <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
@@ -16,32 +22,14 @@
     <!-- Material Design Bootstrap -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
   {% endblock %}
-  
-  {% if title %}
-  <title>Portfolio {{title}}</title>
-  {% else %}
-    <title>Nancy's Portfolio</title>
-  {% endif %}
 
 </head>
-<body style="background-image: url(/static/images/background.jpeg);background-repeat:no-repeat; background-size:cover;">
+<body>
     {% include "navbar.html" %}
-
     {% block content %}
     {%endblock%}
-    <div class="container-fluid">
-      <div class="navbar navbar-default footer">
-        <div class="container">
-          <p class="text-center">
-               <a href="" target="_blank"> Copyright &copy; 2021 by: Nancy Kemunto</a>
-          </p>
-      
-        </div>
-      </div>
-    </div>
-
     {% block scripts %}
-    
+ 
             <!-- JQuery -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Bootstrap tooltips -->
@@ -50,7 +38,22 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
-    
-    {% endblock %}
+
+{% endblock %}
+<footer class="bg-white py-5 footer text-center" style="font-family: 'Viaoda Libre', cursive;">
+  <div class="container px-4 px-lg-5"><span class="text-dark">
+    <span>Created By: <a  style="color: rgb(255, 72, 0);" href="#">Nancy Kemunto</a> <span class="far fa-copyright"></span> 2021. All rights reserved.</span></div> 
+</footer>
+
 </body>
-</html>
+</html> 
+<style>
+  a:hover {
+    color: rgb(255, 72, 0);
+    font-size: x-large;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+  }
+  
+
+</style>

@@ -1,88 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Portfolio</title>
-   <link href="css/styles.css" rel="stylesheet" type="text/css">
-   <link rel="icon" type="image/png" href="images/icon.jpeg">
-   <style>
-     @import url('https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap');
-     </style>
-</head>
-<body>
- <div class="topnav">
-   <a class="active" href="index.html">MyPortfolio</a>
-   <a href="contact.html">Contacts</a>
-   <a href="about.html">About</a>
- </div>
-   <div class="container">
+{% extends "base.html" %}
+{% load static %}
+{% load bootstrap4 %}
+{% block content%}
+  <div class="container" style="padding-top:80px; color: rgb(34, 28, 28); text-align:center;font-family: 'Viaoda Libre', cursive;"> 
+    <h1>Hola! I'm</h1>
+    <p style="font-size:150px">Nancy Kemunto</p>
+    <h1>A full stack web developer based in Nairobi Kenya</h1>
+  </div>
+  <hr>
+  <section>
+    <div class="social" style='text-align: center; font-size:40px;'>
+      <ul>
+        <a href="https://twitter.com/@Nancy_phoepe" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/nancy-kemunto-5a98181b3" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/nancy88199488" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="mailto:nancykemuntosalome@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
+        <a href="tel:+254797077078" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </ul>
+    </div>
+  </section>
+  <hr>
 
-       <h2>Hello, my name is Nancy Kemunto Morang'a</h2>
-       <p>I am a student at <span>Moringa school </span>learning Software development.</p>
-       <img src="./images/Nancy.jpg" alt="my picture" width="300" height="200">
-       
-       <p>Here is a few links to the projects have created and published on github:</p>
-     <ul>
-           <li><a href="https://nancy88199488.github.io/anitas_kitchen/" target="_blank">anitas_kitchen </a></li>
-           <p>Its a website that explains more of meals and drinks offered at anitas kitchen, <br>English is used in its creation.</p>
-           <li><a href="https://nancy88199488.github.io/my-cool-band/" target="_blank">my-cool-band</a></li>
-           <p>This website tells you more of One Direction's albums,music and links to their website,<br>English is used to create the web.</p>
-       </ul>
-       
-
-       <h3>Education</h3>
-
-       <p>I completed my Diploma in Airline Cabin Crew/Air hostess in the<em> year 2012</em> from Nairobi Aviation College.</p>
-       <p>I completed my (K.C.S.E) Kenya Certificate of Secondary Education in the<span> year 2010</span> from Regina Mixed Secondary School.</p>
-   
-       
-       <h3>Job Experience</h3>
-
-       <p>I have worked as a waitress and housekeeper in both restaurant and hotel.</p>
-       <p>Knowledge is power thus driven by hunger to learn new things,I got the opportunity to join <strong>Moringa school</strong>.</p>
-   
-       
-       <h3>Hobbies and Interests</h3>
-
-       <p>My mind relaxes when I do the following activities:</p>
-
-       <ol>
-
-           <li>Watching Movies</li>
-           <li>Listening to Music</li>
-           <li>Travelling</li>
-       </ol>
-       
-       <h3>Skills</h3>
-
-       <p>I have gained some skills in the following:</p>
-
-       <ul>
-
-           <li>Entreprenuership</li>
-           <li>Money Management</li>
-           <li>Computer Packages</li>
-           
-       </ul>
-           
-       <h3>Contacts</h3> 
-  
-       <p>Here is my contacts information:</p>
-       <p><a href="mailto:nancykemuntosalome@gmail.com">send email</a></p> 
-       <p><a href="tel:+254797077078">Call me at +257797077078</a></p> 
-   </div> 
-   <div id="footer">
-       <div id="social">
-         <ul>
-           <li><a href="https://twitter.com/@Nancy_phoepe" target="_blank"><img src="images/twittericon.png" alt=""width="40px" height="40px"></a></li>
-           <li><a href="mailto:nancykemuntosalome@gmail.com" target="_blank"><img src="images/gmailicon.png" alt=""width="40px" height="40px"></a></li>
-         </ul>
-       </div>
-    
-      
-     </div> 
-     </div> 
-</body>
-</html> 
+  {% endblock %}
